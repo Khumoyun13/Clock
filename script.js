@@ -39,8 +39,8 @@ setInterval(() => {
     let mm = day.getMinutes() * deg
     let ss = day.getSeconds() * deg
 
-    hour.style.transform = `rotateZ(${(hh) + (mm / 12)}deg)`
-    minute.style.transform = `rotateZ(${mm}deg)`
+    hour.style.transform = `rotateZ(${(hh) + (mm / 12) + (ss / 60)}deg)`
+    minute.style.transform = `rotateZ(${(mm) + (ss / 60)}deg)`
     second.style.transform = `rotateZ(${ss}deg)`
 })
 
